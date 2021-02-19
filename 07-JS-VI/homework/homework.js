@@ -9,12 +9,14 @@ function mayuscula(nombre) {
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   //Tu código:
+  cb();
 }
 
 function operacionMatematica(n1, n2, cb) {
   //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
+  return cb(n1,n2);
 }
 
 function sumarArray(numeros, cb) {
@@ -23,6 +25,7 @@ function sumarArray(numeros, cb) {
   // No es necesario devolver nada
   //Tu código:
 }
+
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
@@ -41,6 +44,12 @@ function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
+  var nuevoArray=[];
+  for(var i=0; i<array.lenght;i++){
+    if(array[i][0]==='a'){
+      nuevoArray.push(array[i]);
+    }
+  }
 }
 
 // No modificar nada debajo de esta línea
